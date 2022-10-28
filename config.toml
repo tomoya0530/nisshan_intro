@@ -1,3 +1,70 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+## Basic Configuration
+baseurl = "https://nisshann.com"
+builddrafts = false
+canonifyurls = false
+languageCode = "ja"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+author = "T Nishiyama"
+title = "Nisshan's Page"
+
+theme = "hugo-goa"
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+## Hugo Built-in Features
+#googleAnalytics = "XYZ"
+enableRobotsTXT = true
+
+## Site Settings
+[params]
+author = "T Nishiyama"
+intro = "Welcome to My HomePage!"
+description = "ようこそ！"
+authorimage = "auther.jpg"
+dateformat = "Jan 2, 2006"
+
+## Site Meta Settings
+[params.meta]
+description = "Japanese Enginer"
+keywords = "blog,hugo,developer"
+
+## Social Accounts
+[params.social]
+github = "tomoya0530"
+instagram = "248mtv"
+twitter = "okusunisshan"
+youtube = "UC9R1qwROnwl2vH6uP36GMNg"
+
+## Extras
+[params.extra]
+copyright = "© 2022. T Nishiyama. [Some Rights Reserved]"
+poweredby = true
+highlightjs = true
+socialmarkup = true
+toc = true
+displayrssicon = true
+
+## Main Menu
+[[menu.main]]
+    name = "About"
+    identifier = "about"
+    weight = 100
+    url = "/about/"
+    
+[[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    weight = 200
+    url = "/blog/"
+
+[[menu.main]]
+    name = "Cars"
+    identifier = "car"
+    weight = 300
+    url = "/car/"
